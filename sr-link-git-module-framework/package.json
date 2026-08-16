@@ -7,6 +7,6 @@
     "analytics:generate": "node ../historical-test-results-analysis-dashboard/dist/cli.js generate --config dashboard.config.ts"
   },
   "devDependencies": {
-    "historical-analytics-dashboard": "file:../historical-analytics-dashboard"
+    "historical-analytics-dashboard": "file:.."
   }
 }

@@ -63,7 +63,7 @@
     "@wdio/mocha-framework": "^8.35.1",
     "@wdio/spec-reporter": "^8.32.4",
     "cypress": "^13.7.0",
-    "historical-analytics-dashboard": "file:../historical-analytics-dashboard",
+    "historical-analytics-dashboard": "file:..",
     "newman": "^6.2.2",
     "newman-reporter-dashboard-wrapper": "^1.0.4",
     "newman-reporter-htmlextra": "^1.23.1",

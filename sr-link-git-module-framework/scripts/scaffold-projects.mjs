@@ -336,7 +336,7 @@ function npmPackage(name, scripts) {
       'analytics:generate': 'analytics-dashboard generate --config dashboard.config.ts'
     },
     devDependencies: {
-      'historical-analytics-dashboard': 'file:../../historical-analytics-dashboard'
+      'historical-analytics-dashboard': 'file:../..'
     }
   }, null, 2) + '\n';
 }
@@ -349,13 +349,13 @@ function readme(folder, tool, runCmd) {
 ## Prerequisites
 
 - Node.js 18+
-- Built library at \`../../historical-analytics-dashboard\`
+- Built library at \`../..\``
 ${folder.includes('selenium') || folder.includes('playwright-java') ? '- Java 17 and Maven\n' : ''}
 
 ## Setup
 
 \`\`\`powershell
-cd ..\\..\\historical-analytics-dashboard
+cd ..\\..
 npm install && npm run build
 cd ..\\sr-link-git-module-framework\\${folder}
 npm install
@@ -987,7 +987,7 @@ test('Sr Link Playwright TS API CRUD', async ({ request }) => {
     },
     devDependencies: {
       '@playwright/test': '^1.42.0',
-      'historical-analytics-dashboard': 'file:../../historical-analytics-dashboard',
+      'historical-analytics-dashboard': 'file:../..',
       typescript: '^5.4.2'
     }
   }, null, 2) + '\n'));
@@ -1063,7 +1063,7 @@ export {};
     },
     devDependencies: {
       cypress: '^13.7.0',
-      'historical-analytics-dashboard': 'file:../../historical-analytics-dashboard',
+      'historical-analytics-dashboard': 'file:../..',
       typescript: '^5.4.2'
     }
   }, null, 2) + '\n'));
@@ -1156,7 +1156,7 @@ Then('the Cypress login page is visible', () => {
       '@badeball/cypress-cucumber-preprocessor': '^20.0.5',
       '@bahmutov/cypress-esbuild-preprocessor': '^2.2.0',
       cypress: '^13.7.0',
-      'historical-analytics-dashboard': 'file:../../historical-analytics-dashboard',
+      'historical-analytics-dashboard': 'file:../..',
       typescript: '^5.4.2'
     }
   }, null, 2) + '\n'));
@@ -1218,7 +1218,7 @@ export const config: Options.Testrunner = {
       '@wdio/local-runner': '^8.35.1',
       '@wdio/mocha-framework': '^8.35.1',
       '@wdio/spec-reporter': '^8.32.4',
-      'historical-analytics-dashboard': 'file:../../historical-analytics-dashboard',
+      'historical-analytics-dashboard': 'file:../..',
       typescript: '^5.4.2'
     }
   }, null, 2) + '\n'));
@@ -1304,7 +1304,7 @@ Then('the WDIO login page is visible', async () => {
       '@wdio/junit-reporter': '^8.32.4',
       '@wdio/local-runner': '^8.35.1',
       '@wdio/spec-reporter': '^8.32.4',
-      'historical-analytics-dashboard': 'file:../../historical-analytics-dashboard',
+      'historical-analytics-dashboard': 'file:../..',
       typescript: '^5.4.2'
     }
   }, null, 2) + '\n'));

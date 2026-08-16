@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "cypress": "^13.7.0",
-    "historical-analytics-dashboard": "file:../../historical-analytics-dashboard",
+    "historical-analytics-dashboard": "file:../..",
     "typescript": "^5.4.2"
   }
 }

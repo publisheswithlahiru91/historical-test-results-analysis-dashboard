@@ -5,7 +5,7 @@ import { spawnSync } from 'child_process';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
-const libRoot = path.resolve(root, '..', 'historical-analytics-dashboard', 'dist');
+const libRoot = path.resolve(root, '..', 'dist');
 
 async function main() {
   spawnSync('node', ['scripts/generate-smoke-reports.mjs'], { cwd: root, stdio: 'inherit' });

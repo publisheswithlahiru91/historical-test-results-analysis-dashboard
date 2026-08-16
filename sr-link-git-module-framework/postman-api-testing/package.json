@@ -9,7 +9,7 @@
     "analytics:generate": "analytics-dashboard generate --config dashboard.config.ts"
   },
   "devDependencies": {
-    "historical-analytics-dashboard": "file:../../historical-analytics-dashboard",
+    "historical-analytics-dashboard": "file:../..",
     "newman": "^6.2.2",
     "newman-reporter-dashboard-wrapper": "^1.0.4",
     "newman-reporter-htmlextra": "^1.23.1"

@@ -12,6 +12,6 @@
     "analytics:generate": "analytics-dashboard generate --config dashboard.config.ts"
   },
   "devDependencies": {
-    "historical-analytics-dashboard": "file:../../historical-analytics-dashboard"
+    "historical-analytics-dashboard": "file:../.."
   }
 }

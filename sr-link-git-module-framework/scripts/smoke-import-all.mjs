@@ -11,7 +11,7 @@ import {
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
-const libRoot = path.resolve(root, '..', 'historical-analytics-dashboard', 'dist');
+const libRoot = path.resolve(root, '..', 'dist');
 
 const MODULES = [
   {
