@@ -34,7 +34,10 @@
         </div>
 
         <div class="card p-3 mb-4">
-            <h6 class="fw-bold mb-3 text-secondary">Filters</h6>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="fw-bold text-secondary m-0">Filters</h6>
+                <button id="reset-filters" type="button" class="btn btn-outline-secondary btn-sm">Reset Filters</button>
+            </div>
             <div class="row g-3">
                 <div class="col-md-6">
                     <label class="filter-label" for="filter-application-type">Application Type</label>
@@ -242,10 +245,17 @@
             renderDashboard();
         }
 
+        function resetFilters() {
+            document.getElementById('filter-application-type').value = '';
+            document.getElementById('filter-tool').value = '';
+            applyFilters();
+        }
+
         function initFilters() {
             ['filter-application-type', 'filter-tool'].forEach((id) => {
                 document.getElementById(id).addEventListener('change', applyFilters);
             });
+            document.getElementById('reset-filters').addEventListener('click', resetFilters);
             syncFilters();
             filteredRuns = [...allRuns];
         }
