@@ -1,6 +1,6 @@
 {
   "name": "historical-analytics-dashboard",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Historical test execution analysis dashboard — import Newman, JUnit XML, Playwright, and Cypress results, store execution history, and generate HTML analytics dashboards",
   "keywords": [
     "test-dashboard",
